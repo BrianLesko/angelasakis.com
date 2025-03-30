@@ -176,14 +176,4 @@ document.addEventListener("DOMContentLoaded", function () {
   // Load and render markdown content
   const markdownFilePath = "./home.md"; // Update with your file path
   initializeMarkdownRenderer(markdownFilePath);
-
-  // Initialize redirect tracer
-  const traceButton = document.getElementById("trace-redirects");
-  if (traceButton) {
-    traceButton.addEventListener("click", function () {
-      const urlInput = document.getElementById("url-input");
-      const url = urlInput ? urlInput.value : "https://angelasakis.com";
-      traceRedirects(url || "https://angelasakis.com");
-    });
-  }
 });
